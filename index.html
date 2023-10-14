@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main class="container">
+        <section class="players">
+            <div class="player" id="player1">
+                <h2>PLAYER 1</h2>
+                <p>Score ROUND : <span id="roundScore1"></span></p>
+                <p>Score GLOBAL : <span id="globalScore1"></span></p>
+            </div>
+            <div class="game">
+                <button id="newGameBtn">New Game</button>
+                <img src="dice1.png" alt="Face 1 du dé" width="60">
+                <button id="rollBtn">Roll Dice</button>
+                <button id="holdBtn">Hold</button>
+            </div>
+            <div class="player" id="player2">
+                <h2>PLAYER 2</h2>
+                <p>Score ROUND : <span id="roundScore2"></span></p>
+                <p>Score GLOBAL : <span id="globalScore2"></span></p>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
